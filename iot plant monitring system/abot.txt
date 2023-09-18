@@ -1,0 +1,39 @@
+ESP32 DEV KIT V1
+Capacitive soil moisture sensor V2.0
+DHT11 Sensor
+0.96″ OLED Display
+1k 0.25watt Resistors (R1-R6) – 6 no
+1N4007 diode
+BC547 NPN Transistor
+TIP122 NPN Transistor with heat sink
+LEDs 5mm – 4no
+7805 voltage regulator with heat sink
+2-pin Push Button – 2no
+2-pin Terminal connectors (2 no)
+3-pin Terminal connectors (1 no)
+5V DC Buzzer
+100uF 25V capacitor (C1)
+100nF 330nF AC capacitors (C1, C2)
+12V DC pump or solenoid valve
+12VDC Supply
+
+ESP32 GPIOs	Connected Sensors/Components
+D34	Capacitive moisture sensor AOUT pin
+D32	Push-Button to turn ON/OFF pump
+D33	Push-Button for changing MODE.
+D25	TIP122 base pin (controlling pump)
+D26	BC547 base pin (controlling Buzzer)
+D14	DHT11 sensor O/P pin
+D15	LED indicator for MODE
+D2	LED indicator for WiFi
+D21	SDA of OLED
+D22	SCL of OLED
+
+First update the Preferences –> Aditional boards Manager URLs: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json
+Then install the ESP32 board (2.0.5) from the Board manager or Click Here to download the ESP32 board.
+Download the required libraries from the following links:
+Blynk Library (Version 1.1.0)
+AceButton Library (Version 1.9.2)
+Adafruit_SSD1306 Library (Version 2.5.7)
+Adafruit Unified Sensor Library (Version 1.1.7)
+DHT Library (Version 1.4.4)
